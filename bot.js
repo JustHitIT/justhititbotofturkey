@@ -19,7 +19,7 @@ client.on('message', msg => {
     msg.channel.sendMessage('JustHitIT Resmi Bot!');
   }
   if (msg.content === prefix + 'youtube') {
-    msg.channel.sendMessage('Kanal: JustHitIT!');
+    msg.channel.sendMessage('Kanal: JustHitIT! www.youtube.com/c/justhitit den katılabilirsin ;)');
   }
   if (msg.content === prefix + 'help') {
     msg.channel.sendMessage(
