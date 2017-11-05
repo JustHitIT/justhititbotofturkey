@@ -18,6 +18,11 @@ client.on('message', msg => {
   if (msg.content === prefix + 'kanal') {
     msg.channel.sendMessage('JustHitIT Resmi Bot!');
   }
+  if (msg.content === prefix + 'yetkililer') {
+    msg.channel.sendMessage(
+	"Sunucu Kurucusu: JustHitIT \n" +
+	"Sunucu Yardimcisi : Yok");
+  }
   if (msg.content === prefix + 'youtube') {
     msg.channel.sendMessage('Kanal: JustHitIT! www.youtube.com/c/justhitit den katılabilirsin ;)');
   }
@@ -26,6 +31,7 @@ client.on('message', msg => {
 	"Commands: \n" +
 	"- ping : Pinginizi soyler. \n" +
 	"- kanal : Oylesine :) \n" +
+	"- yetkililer : Yetkililer Kim? \n" +
 	"- youtube : Hangi kanala aitim onu soyler!");
 	
   }
