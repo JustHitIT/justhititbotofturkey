@@ -1,0 +1,14 @@
+{
+  "name": "justhitit",
+  "version": "0.0.1",
+  "description": "turkiye milli botumuz",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "JustHitIT Anil",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
