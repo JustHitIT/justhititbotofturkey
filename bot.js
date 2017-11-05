@@ -9,6 +9,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (!msg.content.startsWith(prefix)) {
+	  console.log(`Bot: Yeni Mesaj Alindi! Mesaj: ${msg.content} Yazan: ${msg.author.tag}`)
 	  return;
   }
   if (msg.content === prefix + 'ping') {
@@ -21,10 +22,12 @@ client.on('message', msg => {
     msg.channel.sendMessage('Kanal: JustHitIT!');
   }
   if (msg.content === prefix + 'help') {
-    msg.channel.sendMessage('Komutlar');
-	msg.channel.sendMessage('kanal');
-	msg.channel.sendMessage('ping');
-	msg.channel.sendMessage('youtube');
+    msg.channel.sendMessage(
+	"Commands: \n" +
+	"- ping : Pinginizi soyler. \n" +
+	"- kanal : Oylesine :) \n" +
+	"- youtube : Hangi kanala aitim onu soyler!");
+	
   }
 });
 
